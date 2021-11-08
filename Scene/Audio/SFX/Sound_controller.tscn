@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Audio/Sfx/Explosion.wav" type="AudioStream" id=1]
+[ext_resource path="res://Audio/Sfx/Laser_Shoot.wav" type="AudioStream" id=2]
+[ext_resource path="res://Audio/Sfx/Hit.wav" type="AudioStream" id=3]
+[ext_resource path="res://Scripts/SFX/Sound_controller.gd" type="Script" id=4]
+[ext_resource path="res://Audio/Theme/Slower-Tempo-2020-03-22_-_A_Bit_Of_Hope_-_David_Fesliyan.mp3" type="AudioStream" id=5]
+
+[node name="Sound_controller" type="Node"]
+pause_mode = 2
+script = ExtResource( 4 )
+
+[node name="Shoot" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 2 )
+volume_db = -10.0
+
+[node name="Hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -10.0
+
+[node name="Explosion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -10.0
+
+[node name="Theme" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -8.0
+autoplay = true

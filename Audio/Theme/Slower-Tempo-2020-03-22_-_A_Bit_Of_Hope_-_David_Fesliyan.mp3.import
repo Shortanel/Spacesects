@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Slower-Tempo-2020-03-22_-_A_Bit_Of_Hope_-_David_Fesliyan.mp3-5acca94e28db29475db27e4ff7cb8525.mp3str"
+
+[deps]
+
+source_file="res://Audio/Theme/Slower-Tempo-2020-03-22_-_A_Bit_Of_Hope_-_David_Fesliyan.mp3"
+dest_files=[ "res://.import/Slower-Tempo-2020-03-22_-_A_Bit_Of_Hope_-_David_Fesliyan.mp3-5acca94e28db29475db27e4ff7cb8525.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

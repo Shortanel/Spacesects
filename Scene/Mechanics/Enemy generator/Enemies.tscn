@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Mechanics/enemy generator/asteroid.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Mechanics/enemy generator/fly.gd" type="Script" id=2]
+[ext_resource path="res://Scene/Enemies/Fly.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scene/Enemies/Asteroid.tscn" type="PackedScene" id=4]
+
+[node name="Enemies" type="Node2D"]
+
+[node name="asteroid" type="Timer" parent="."]
+script = ExtResource( 1 )
+Asteroid = ExtResource( 4 )
+
+[node name="fly" type="Timer" parent="."]
+script = ExtResource( 2 )
+Fly = ExtResource( 3 )
+[connection signal="timeout" from="asteroid" to="asteroid" method="_on_asteroid_timeout"]
+[connection signal="timeout" from="fly" to="fly" method="_on_fly_timeout"]
